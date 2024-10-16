@@ -26,7 +26,7 @@ export default function Login(){
         <>
             <h1>Login Page</h1>
             <input type="text" placeholder="Email" onChange={e=> setEmail(e.target.value)}/><br/>
-            <input type="text" placeholder="Password" onChange={e=> setPassword(e.target.value)}/><br/>
+            <input type="password" placeholder="Password" onChange={e=> setPassword(e.target.value)}/><br/>
             <button onClick={signInHandler}>Log in</button>
             {message && <p>{message}</p>}
         </>
